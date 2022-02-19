@@ -1,0 +1,271 @@
+/* &display=swap */
+@import "null.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url("../fonts/SourceSansPro-BoldItalic.woff2") format("woff2"),
+		url("../fonts/SourceSansPro-BoldItalic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	/* background-color: rgba(32, 5, 75, 0.164); */
+	background-image: url("../img/1584106501_17-p-nezhno-golubie-foni-dlya-prezentatsii-25.jpg");
+	background-attachment: fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+span {
+	font-family: "SourceSansPro", sans-serif;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.link {
+	font-family: "SourceSansPro", sans-serif;
+	font-style: italic;
+	font-weight: 700;
+	color: red;
+	text-decoration: underline;
+}
+
+.link:visited {
+	color: blueviolet;
+}
+
+.logo {
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.815);
+	padding: 15px;
+	margin-bottom: 45px;
+}
+.logo-image {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: rgba(33, 161, 33, 0.815);
+}
+.logo-image:hover {
+	box-shadow: 2px 2px 8px 2px rgb(231, 219, 219);
+	padding-top: 10px;
+}
+
+.logo-image:active {
+	background-color: aqua;
+}
+
+.block-title {
+	max-width: 700px;
+	margin: 0 auto 35px;
+}
+
+.title {
+	display: none;
+	font-size: 35px;
+	text-align: center;
+	padding: 15px;
+	line-height: 1.5;
+	font-weight: 700;
+	letter-spacing: 3px;
+	background-color: rgba(255, 255, 255, 0.486);
+}
+
+.title:target {
+	display: block;
+	background-color: rgba(0, 255, 255, 0.493);
+}
+
+.subtitle {
+	display: inline-block;
+	font-size: 30px;
+	padding: 10px 5px 10px 40px;
+	margin: 0px auto;
+	letter-spacing: 5px;
+	font-weight: 700;
+	background-color: #fff;
+}
+
+.subtitle:hover {
+	text-shadow: 2px 2px 5px rgb(129, 26, 26);
+	background-color: rgba(6, 247, 66, 0.468);
+}
+
+.block-title :hover {
+	box-shadow: 2px 2px 8px 2px black;
+}
+.block-title :hover:nth-child(odd) {
+	box-shadow: 3px 3px 13px 5px rgb(182, 27, 27);
+}
+
+.subtitle::after {
+	content: "";
+	display: block;
+	max-width: 150px;
+	height: 2px;
+	background: #000;
+	margin: 7px auto 0;
+}
+
+.subtitle:hover::after {
+	max-width: 100%;
+	height: 3px;
+	background-color: red;
+}
+
+.block-title img {
+	width: 100%;
+}
+
+.block-title *:not(:last-child) {
+	margin: 0px 0px 30px 0px;
+}
+
+/* ====================================================== */
+
+.content-title {
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 35px;
+	text-decoration: underline;
+}
+
+.menu {
+	font-family: "Montserrat", sans-serif;
+	max-width: 500px;
+	margin: 0 auto 20px;
+	border-radius: 90px 0px 90px 0px;
+	padding: 25px;
+	background-color: rgba(12, 55, 134, 0.493);
+}
+
+.list li {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 1.3;
+	margin-bottom: 5px;
+	padding-left: 30px;
+}
+
+.list li:last-child {
+	margin-bottom: 0;
+}
+
+.list-item::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background-color: chartreuse;
+	border-radius: 50%;
+	margin: 0px 10px 0px -30px;
+}
+
+.list-item:hover::after {
+	content: "";
+	display: block;
+	background-color: rgba(104, 172, 35, 0.979);
+	height: 3px;
+	width: 100%;
+}
+
+.list-item:hover::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: url("../img/right-arrow-facing.gif") 0 5px / 25px no-repeat;
+	margin: 0px 10px -8px -40px;
+}
+
+.list-item:hover {
+	color: aqua;
+}
+.list-item:active {
+	color: rgb(52, 163, 61);
+}
+
+.text {
+	margin-bottom: 35px;
+}
+
+.text p:last-child {
+	margin-bottom: 0;
+}
+
+.text-about {
+	padding: 10px;
+	margin: 0px 10px 15px;
+	text-indent: 15px;
+}
+
+.text p::first-line {
+	color: blue;
+}
+
+p {
+	background-color: rgba(163, 125, 30, 0.418);
+}
+
+.text p:nth-child(odd) {
+	background-color: rgba(0, 100, 0, 0.486);
+}
+
+.text p:hover:nth-child(even) {
+	background-color: rgba(187, 25, 187, 0.548);
+}
+
+.text p:hover:nth-child(2) {
+	background-color: rgba(233, 1, 1, 0.541);
+}
+
+.bottom {
+	font-size: 25px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.link-bottom {
+	background-color: goldenrod;
+	padding: 10px 30px;
+	display: inline-block;
+	border-radius: 20px;
+	color: blue;
+	text-transform: uppercase;
+	box-shadow: 0px 3px 0px 0px #000;
+}
+
+.link-bottom:hover {
+	box-shadow: 0px 1px 0px 0px #000;
+	margin-top: 1px;
+}
+
+.link-bottom:active {
+	box-shadow: inset 0px 0px 10px 0px #000;
+	margin: 3px 0px 0px 0px;
+}
+
+.bottom::after {
+	content: "";
+	height: 12px;
+	max-width: 120px;
+	border-radius: 40%;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.185);
+	margin: 35px auto;
+}
